@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\fatma\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\fatma\\.nuget\\packages"
+    ]
+  }
+}

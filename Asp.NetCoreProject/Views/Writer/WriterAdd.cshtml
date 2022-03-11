@@ -1,0 +1,54 @@
+﻿@model Asp.NetCoreProject.Models.AddProfileImage
+@{
+    ViewData["Title"] = "WriterAdd";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<form class="form-group" method="post" enctype="multipart/form-data">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <p>@ViewBag.a</p>
+                @if (ViewBag.a == 1)
+                {
+                    <h6>Bilgileriniz Güncellendi</h6>
+                }
+                <br />
+                <h4 class="card-title">Yazar Profil Bilgileri Düzenleme</h4>
+                @Html.HiddenFor(x => x.WriterID, new { @class = "form-control" })
+                <br />
+                <div class="forms-sample">
+
+                    <div class="form-group">
+                        <label for="exampleInputName1">Ad Soyad</label>
+
+                        @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Mail</label>
+                        @Html.TextBoxFor(x => x.WriterMail, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Şifre</label>
+                        @Html.PasswordFor(x => x.WriterPassword, new { @class = "form-control" })
+                    </div>
+
+                    <div class="form-group">
+                        <label>Yazar Profil Fotoğrafı</label>
+                       <input type="file" name="WriterImage" />
+                              
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Hakkımda</label>
+                        @Html.TextAreaFor(x => x.WriterAbout, 10, 3, new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Kaydet</button>
+                    <button class="btn btn-light">İptal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+      
+

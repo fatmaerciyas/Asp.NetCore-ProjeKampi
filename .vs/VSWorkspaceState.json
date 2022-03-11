@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Asp.NetCoreProject",
+    "\\Asp.NetCoreProject\\Views",
+    "\\Asp.NetCoreProject\\Views\\Blog",
+    "\\BusinessLayer",
+    "\\BusinessLayer\\Concrete",
+    "\\DataAccessLayer",
+    "\\DataAccessLayer\\Abstract",
+    "\\DataAccessLayer\\EntityFramework",
+    "\\DataAccessLayer\\Repositories"
+  ],
+  "SelectedNode": "\\Asp.NetCoreProject\\Controllers\\BlogController.cs",
+  "PreviewInSolutionExplorer": false
+}
